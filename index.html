@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Batmusic</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="theme-color" content="#8ED7BF">
+    <link rel="stylesheet" type="text/css" href="dist/css/style.css">
+</head>
+<body class="songs-list-shown">
+    <header class="web-header">
+        <span class="sprite icon-add add-icon" title="Add song"></span>
+        <h1 class="web-title">Batmusic</h1>
+    </header>
+    <form class="ui-element new-song-form" novalidate>
+        <div>
+            <label for="artist">Artist</label>
+            <input type="text" id="artist" name="artist" placeholder="Artist" required>
+        </div>
+        <div>
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Song title" required>
+        </div>
+        <div>
+            <label for="audio_file">Audio URL</label>
+            <div id="audio_file" class="drop-zone" filetype="audio/.+">Drop here your audio file</div>
+        </div>
+        <div>
+            <label for="cover_file">Cover URL</label>
+            <div id="cover_file" class="drop-zone" filetype="image/.+">Drop here your cover file</div>
+        </div>
+        <button>Save song</button>
+    </form>
+    <section class="ui-element songs-list">
+    </section>
+    <script src="dist/js/app.js"></script>
+</body>
+</html>
